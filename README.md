@@ -1,6 +1,5 @@
 # Heavy-N-Queens
-Addressing Heavy N-Queens Problem
-Part 1.  Heavy N-queens problem
+Heavy N-queens problem
 The problem
 For this problem, you will work on a variant of the N-queens problem we discussed in class.  Some of the queen pieces are very heavy, and therefore difficult to move.  Queens have a weight ranging from 1 to 9 (integers).  The cost to move a queen is the number of tiles you move it times its weight.  So to move a queen weighing 6 upwards by 4 squares in a column costs 6 * 4 = 24.  
 
@@ -14,9 +13,6 @@ H2.  Sum across every pair of attacking Queens the weight of the lightest Queen.
 
 It is not immediately obvious that H2 is admissible.  Either prove that it is admissible or construct a counterexample to prove that it is not.  
 
-Extra credit:  develop a heuristic H3 that is is better than H1 and is admissible.  Prove/demonstrate that H3 is admissible.  
-Approaches
-You will use two approaches for this problem:  A* and greedy hill climbing with restarts.  You are free to make use of sideways moves, first choice hill climbing, or simulated annealing.  You are not required to use any particular technique for deciding how to allocate your time.  However, your decisions should have empirical support.  In other words, you will need to present data for why (for example) you do first-choice hill climbing with at most 3 sideways moves.    
 
 For hill climbing with restarts, you should use H1 and H2 and perform greedy hill climbing.  If you have not found a solution, and fewer than 10 seconds have elapsed since the program started running, you should do another iteration of hill climbing with the same start state (you may not change the initial configuration of Queens).  
 Program behavior 
